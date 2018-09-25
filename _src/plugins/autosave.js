@@ -8,6 +8,7 @@ UE.plugin.register("autosave", function() {
     saveKey = null;
 
   function save(editor) {
+      console.log('save');
     var saveData;
 
     if (new Date() - lastSaveTime < MIN_TIME) {

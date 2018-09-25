@@ -11,7 +11,6 @@
 
 .edui-default .edui-toolbar .edui-combox-body .edui-arrow {
     background: url(../images/icons.png) -741px 0;
-    _background: url(../images/icons.gif) -741px 0;
     height: 20px;
     width: 9px;
 }
@@ -19,9 +18,9 @@
 .edui-default .edui-toolbar .edui-combox .edui-combox-body {
     border: 1px solid #CCC;
     background-color: white;
-    border-radius: 2px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
+    /*border-radius: 2px;*/
+    /*-webkit-border-radius: 2px;*/
+    /*-moz-border-radius: 2px;*/
 }
 
 .edui-default .edui-toolbar .edui-combox-body .edui-splitborder {

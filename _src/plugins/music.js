@@ -20,7 +20,7 @@ UE.plugin.register("music", function() {
           me.options.langPath +
           me.options.lang +
           '/images/music.png" />'
-      : '<embed type="application/x-shockwave-flash" class="edui-faked-music" pluginspage="http://www.macromedia.com/go/getflashplayer"' +
+      : '<embed class="edui-faked-music" pluginspage="http://www.macromedia.com/go/getflashplayer"' +
           ' src="' +
           url +
           '" width="' +

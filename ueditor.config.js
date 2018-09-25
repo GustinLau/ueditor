@@ -33,43 +33,44 @@
     //工具栏上的所有的功能按钮和下拉框，可以在new编辑器的实例时选择自己需要的重新定义
     toolbars: [
       [
-        "fullscreen",
-        "source",
-        "|",
+        // "fullscreen",
+        // "source",
+        // "|",
         "undo",
         "redo",
         "|",
         "bold",
         "italic",
         "underline",
-        "fontborder",
-        "strikethrough",
-        "superscript",
-        "subscript",
+        // "fontborder",
+        // "strikethrough",
+        // "superscript",
+        // "subscript",
         "removeformat",
         "formatmatch",
-        "autotypeset",
+        // "autotypeset",
         "blockquote",
-        "pasteplain",
+        // "pasteplain",
         "|",
         "forecolor",
         "backcolor",
         "insertorderedlist",
         "insertunorderedlist",
-        "selectall",
-        "cleardoc",
+        // "selectall",
+        // "cleardoc",
         "|",
         "rowspacingtop",
         "rowspacingbottom",
         "lineheight",
+        "letterspacing",
         "|",
-        "customstyle",
-        "paragraph",
+        // "customstyle",
+        // "paragraph",
         "fontfamily",
         "fontsize",
         "|",
-        "directionalityltr",
-        "directionalityrtl",
+        // "directionalityltr",
+        // "directionalityrtl",
         "indent",
         "|",
         "justifyleft",
@@ -77,67 +78,67 @@
         "justifyright",
         "justifyjustify",
         "|",
-        "touppercase",
-        "tolowercase",
-        "|",
+        // "touppercase",
+        // "tolowercase",
+        // "|",
         "link",
         "unlink",
-        "anchor",
+        // "anchor",
         "|",
         "imagenone",
         "imageleft",
         "imageright",
         "imagecenter",
         "|",
-        "simpleupload",
+        // "simpleupload",
         "insertimage",
-        "emotion",
-        "scrawl",
-        "insertvideo",
-        "music",
-        "attachment",
-        "map",
-        "gmap",
-        "insertframe",
-        "insertcode",
-        "webapp",
-        "pagebreak",
-        "template",
-        "background",
-        "|",
-        "horizontal",
-        "date",
-        "time",
-        "spechars",
-        "snapscreen",
-        "wordimage",
-        "|",
-        "inserttable",
-        "deletetable",
-        "insertparagraphbeforetable",
-        "insertrow",
-        "deleterow",
-        "insertcol",
-        "deletecol",
-        "mergecells",
-        "mergeright",
-        "mergedown",
-        "splittocells",
-        "splittorows",
-        "splittocols",
-        "charts",
-        "|",
-        "print",
-        "preview",
-        "searchreplace",
-        "drafts",
-        "help"
+        // "emotion",
+        // "scrawl",
+        // "insertvideo",
+        // "music",
+        // "attachment",
+        // "map",
+        // "gmap",
+        // "insertframe",
+        // "insertcode",
+        // "webapp",
+        // "pagebreak",
+        // "template",
+        // "background",
+        // "|",
+        // "horizontal",
+        // "date",
+        // "time",
+        // "spechars",
+        // "snapscreen",
+        // "wordimage",
+        // "|",
+        // "inserttable",
+        // "deletetable",
+        // "insertparagraphbeforetable",
+        // "insertrow",
+        // "deleterow",
+        // "insertcol",
+        // "deletecol",
+        // "mergecells",
+        // "mergeright",
+        // "mergedown",
+        // "splittocells",
+        // "splittorows",
+        // "splittocols",
+        // "charts",
+        // "|",
+        // "print",
+        // "preview",
+        // "searchreplace",
+        // "drafts",
+        // "help"
       ]
     ]
     //当鼠标放在工具栏上时显示的tooltip提示,留空支持自动多语言配置，否则以配置值为准
-    //,labelMap:{
+    // ,labelMap:{
     //    'anchor':'', 'undo':''
-    //}
+    // }
 
     //语言配置项,默认是zh-cn。有需要的话也可以使用如下这样的方式来自动多语言切换，当然，前提条件是lang文件夹下存在对应的语言文件：
     //lang值也可以通过自动获取 (navigator.language||navigator.browserLanguage ||navigator.userLanguage).toLowerCase()
@@ -186,7 +187,7 @@
     //,autoClearEmptyNode : true //getContent时，是否删除空的inlineElement节点（包括嵌套的情况）
 
     //启用自动保存
-    //,enableAutoSave: true
+    ,enableAutoSave: false
     //自动保存间隔时间， 单位ms
     //,saveInterval: 500
 
@@ -241,21 +242,21 @@
 
     //insertorderedlist
     //有序列表的下拉配置,值留空时支持多语言自动识别，若配置值，则以此值为准
-    //,'insertorderedlist':{
-    //      //自定的样式
-    //        'num':'1,2,3...',
-    //        'num1':'1),2),3)...',
-    //        'num2':'(1),(2),(3)...',
-    //        'cn':'一,二,三....',
-    //        'cn1':'一),二),三)....',
-    //        'cn2':'(一),(二),(三)....',
-    //     //系统自带
-    //     'decimal' : '' ,         //'1,2,3...'
-    //     'lower-alpha' : '' ,    // 'a,b,c...'
-    //     'lower-roman' : '' ,    //'i,ii,iii...'
-    //     'upper-alpha' : '' , lang   //'A,B,C'
-    //     'upper-roman' : ''      //'I,II,III...'
-    //}
+    ,'insertorderedlist':{
+         //自定的样式
+         //   'num':'1,2,3...',
+         //   'num1':'1),2),3)...',
+         //   'num2':'(1),(2),(3)...',
+         //   'cn':'一,二,三....',
+         //   'cn1':'一),二),三)....',
+         //   'cn2':'(一),(二),(三)....',
+        //系统自带
+        'decimal' : '' ,         //'1,2,3...'
+        'lower-alpha' : '' ,    // 'a,b,c...'
+        'lower-roman' : '' ,    //'i,ii,iii...'
+        'upper-alpha' : '' ,    //'A,B,C'
+        'upper-roman' : ''      //'I,II,III...'
+    }
 
     //insertunorderedlist
     //无序列表的下拉配置，值留空时支持多语言自动识别，若配置值，则以此值为准
@@ -308,6 +309,10 @@
     //行内间距 值和显示的名字相同
     //,'lineheight':['1', '1.5','1.75','2', '3', '4', '5']
 
+    //letterspacing
+    //字间距 值和显示的名字相同
+    //,'letterspacing':['0.5','1', '2', '5', '8', '10', '12', '15']
+
     //customstyle
     //自定义样式，不支持国际化，此处配置值即可最后显示值
     //block的元素是依据设置段落的逻辑设置的，inline的元素依据BIU的逻辑设置
@@ -340,7 +345,7 @@
     //]
 
     //快捷菜单
-    //,shortcutMenu:["fontfamily", "fontsize", "bold", "italic", "underline", "forecolor", "backcolor", "insertorderedlist", "insertunorderedlist"]
+    ,shortcutMenu:["fontfamily", "fontsize", "bold", "italic", "underline", "forecolor", "backcolor", "insertorderedlist", "insertunorderedlist"]
 
     //elementPathEnabled
     //是否启用元素路径，默认是显示
@@ -384,7 +389,7 @@
 
     //autoFloatEnabled
     //是否保持toolbar的位置不动,默认true
-    //,autoFloatEnabled:true
+    ,autoFloatEnabled:false
     //浮动时工具栏距离浏览器顶部的高度，用于某些具有固定头部的页面
     //,topOffset:30
     //编辑器底部距离工具栏高度(如果参数大于等于编辑器高度，则设置无效)

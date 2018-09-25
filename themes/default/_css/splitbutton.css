@@ -2,7 +2,6 @@
 .edui-default .edui-toolbar .edui-splitbutton-body .edui-arrow,
 .edui-default .edui-toolbar .edui-menubutton-body .edui-arrow {
     background: url(../images/icons.png) -741px 0;
-    _background: url(../images/icons.gif) -741px 0;
     height: 20px;
     width: 9px;
 }

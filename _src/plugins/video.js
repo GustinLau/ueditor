@@ -42,7 +42,7 @@ UE.plugins["video"] = function() {
         break;
       case "embed":
         str =
-          '<embed type="application/x-shockwave-flash" class="' +
+          '<embed class="' +
           classname +
           '" pluginspage="http://www.macromedia.com/go/getflashplayer"' +
           ' src="' +

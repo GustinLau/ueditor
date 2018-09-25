@@ -44,7 +44,7 @@ UE.plugin.register("simpleupload", function() {
         '">' +
         '<input id="edui_input_' +
         timestrap +
-        '" type="file" accept="image/*" name="' +
+        '" type="file" accept="image/gif,image/jpeg,image/jpg,image/png" name="' +
         me.options.imageFieldName +
         '" ' +
         'style="' +

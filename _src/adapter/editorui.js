@@ -807,6 +807,50 @@
     return ui;
   };
 
+    editorui.letterspacing = function(editor) {
+        var val = editor.options.letterspacing || [];
+        if (!val.length) return;
+        for (var i = 0, ci, items = []; (ci = val[i++]); ) {
+            items.push({
+                //todo:写死了
+                label: ci,
+                value: ci,
+                theme: editor.options.theme,
+                onclick: function() {
+                    editor.execCommand("letterspacing", this.value);
+                }
+            });
+        }
+        var ui = new editorui.MenuButton({
+            editor: editor,
+            className: "edui-for-letterspacing",
+            title:
+            editor.options.labelMap["letterspacing"] ||
+            editor.getLang("labelMap.letterspacing") ||
+            "",
+            items: items,
+            onbuttonclick: function() {
+                var value = editor.queryCommandValue("letterspacing") || this.value;
+                editor.execCommand("letterspacing", value);
+            }
+        });
+        editorui.buttons["letterspacing"] = ui;
+        editor.addListener("selectionchange", function() {
+            var state = editor.queryCommandState("letterspacing");
+            if (state == -1) {
+                ui.setDisabled(true);
+            } else {
+                ui.setDisabled(false);
+                var value = editor.queryCommandValue("letterspacing");
+                value && ui.setValue((value + "").replace(/cm/, ""));
+                ui.setChecked(state);
+            }
+        });
+        return ui;
+    };
+
+
+
   var rowspacings = ["top", "bottom"];
   for (var r = 0, ri; (ri = rowspacings[r++]); ) {
     (function(cmd) {

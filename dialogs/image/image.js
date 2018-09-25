@@ -151,6 +151,7 @@
         init: function () {
             this.initContainer();
             this.initEvents();
+            $($G("lock")).trigger('click');
         },
         initContainer: function () {
             this.dom = {

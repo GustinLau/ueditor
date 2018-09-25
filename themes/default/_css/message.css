@@ -18,7 +18,7 @@
     position: relative;
 }
 .edui-default .edui-message-body{
-    border-radius: 3px;
+    /*border-radius: 3px;*/
     padding: 8px 15px 8px 8px;
     color: #c09853;
     background-color: #fcf8e3;
